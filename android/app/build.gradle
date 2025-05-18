@@ -32,6 +32,10 @@ android {
     compileSdkVersion 35
     ndkVersion flutter.ndkVersion
 
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -41,12 +45,8 @@ android {
         jvmTarget = '1.8'
     }
 
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
-    }
 
     defaultConfig {
-        applicationId "com.example.payment_printer"
         minSdkVersion 21
         //noinspection EditedTargetSdkVersion
         targetSdkVersion 34

@@ -23,6 +23,10 @@ android {
     lint {
         disable 'InvalidPackage'
     }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 }
 
 dependencies {
