@@ -28,7 +28,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.example.payment_printer"
+    namespace 'com.example.payment_printer'
     compileSdkVersion 35
     ndkVersion flutter.ndkVersion
 
